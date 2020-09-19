@@ -20,5 +20,8 @@
   "homepage": "https://github.com/SmoothDev24/PersonalPortfolioProject#readme",
   "devDependencies": {
     "lite-server": "^2.5.4"
+  },
+  "dependencies": {
+    "bootstrap-social": "^5.1.1"
   }
 }

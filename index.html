@@ -8,35 +8,117 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/sketchy/bootstrap.min.css" integrity="sha384-RxqHG2ilm4r6aFRpGmBbGTjsqwfqHOKy1ArsMhHusnRO47jcGqpIQqlQK/kmGy9R" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" href="portfolioProject.css">
     <title>SmoothDev24 Portfolio Page!</title>
 </head>
 <body>
     <section>
         <div class="jumbotron jumbotron-fluid pl-3 pt-0">
-            <div class="container-fluid text-center" id="jumbo">
+            <div class="container-fluid  text-center" id="jumbo">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light mt-3">
                     <a class="navbar-brand" href="#">SmooveDev24</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </nav>
-                    <h1 class="display-3 pt-5">SmoothDev24's Portfolio Page</h1>
-                    <h3 class="lead">Through code I will create you a well-organized and responsive websites.</h3>
-                    <hr class="my-4">
-                    <p>I am always looking for mentors, accountability partners, and collaborators.</p>
-                    <p class="lead">
-                    <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Connect</a> -->
+                <div id="titleSection" class="container d-flex flex-column align-items-center">
+                  <h1 class="display-3 pt-5">SmoothDev24's Portfolio Page</h1>
+                  <h3 class="lead">Through code I will create you a well-organized and responsive websites.</h3>
+                  <hr class="my-4 col-8">
+                  <h5>I am always looking for mentors, accountability partners, and collaborators.</h5>
+                  <div class="lead pt-4">
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#connectModal">
+                    <button class="btn btn-primary"> <a role="button" data-toggle="modal" data-target="#connectModal">
                     Connect with SmoothDev24
-                    </button>
+                    </a></button>
+                  </div>
+                </div>
+            </div>
+            <div class="modal" id="connectModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Connect with SmoothDev24</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body px-5">
+                        <form>
+                            <div class="form-group row">
+                              <label class="col-3" for="connectName">Full Name</label>
+                              <input type="text" class="form-control col-9" id="connectName" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group row">
+                              <label class="col-3" for="connectEmail">Email address</label>
+                              <input type="email" class="form-control col-9" id="connectEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="row text-center">
+                              <div class="col form-check">
+                                <input type="checkbox" class="form-check-input px-1" id="checkMentors">
+                                <label class="form-check-label px-1" for="checkMentors">Mentors</label>
+                              </div>
+                              <div class="col form-check">
+                                <input type="checkbox" class="form-check-input px-1" id="checkAccoutable">
+                                <label class="form-check-label px-1" for="checkAccoutable">Accountability Partner</label>
+                              </div>
+                              <div class="col form-check">
+                                <input type="checkbox" class="form-check-input px-1" id="checkCollab">
+                                <label class="form-check-label px-1" for="checkCollab">Collaborate</label>
+                              </div>
+                            </div>
+                          </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-primary order-2">Submit</button>
+                      <button type="button" class="btn btn-secondary order-1" data-dismiss="modal">Cancel</button>
+                    </div>
+                  </div>
+                </div>
             </div>
         </div>
     </section>
     <section class="text-center">
-        small section
+        <div class="row">
+          <div class="row container-fluid">
+              <img src="imgs/IMG_me.jpg" id="me" class="col-sm-6 d-none d-sm-block" alt="Image of SmoothDev24 at his desk">
+              <div class="col-sm-6 d-flex justify-content-center align-items-center">
+                <p class="lead" id="blurb">Hello! My name is Randy Smith (aka SmoothDev24) and
+                  this is my portfolio page that will document and show my progression as a Web and 
+                  Software Developer.  As amazing as it would be to say that I have been developing for 
+                  10, 5, 2, or even 1 year(s); the harsh reality is that this is the beginning of my 
+                  journey.  Languages that I am comfortable with are HTML, CSS, JavaScript, and 
+                  Python.  I am looking forward to opportunities in the future that will allow me to work
+                  with startups, collaborate with other talented people, working with agencies, and establishing 
+                  a business that will allow me to create awesome digital products for businesses and consumers alike.
+                  Feel free to reach out to me via the "Connect with me" button. Thanks for visiting! </br>
+                  <span class="d-flex justify-content-end pr-3">-- Respectfully,</span><span class="d-flex justify-content-end pr-3">SmoothDev24</span>
+                  </p>
+              </div>
+          </div>
+        </div>
+    </section>
+    <section>
+      <div class="row">
+        <div id="triFold" class="container">
+          <div class="d-flex row rounded-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates recusandae possimus ipsam eligendi ut! Iste porro, vitae nisi nulla laborum, nihil, rem modi omnis sapiente amet sint debitis in vero provident reiciendis maxime fugiat esse impedit voluptatibus fugit neque magnam minima. Optio nostrum, vel pariatur explicabo veritatis fugit sunt nesciunt.
+          </div>
+          <div class="d-flex row">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vitae placeat praesentium iusto itaque fugit aspernatur, optio amet. Atque laborum explicabo architecto magnam adipisci ducimus.
+          </div>
+          <div class="d-flex row rounded-right">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iste fugit eligendi nulla numquam, suscipit rem unde voluptatibus ab voluptatum quo molestiae porro facere. Necessitatibus.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <footer>
 
+      </footer>
     </section>
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
