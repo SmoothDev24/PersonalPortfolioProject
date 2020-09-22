@@ -16,12 +16,13 @@
     border: 2px dashed red;
 }
 #hero{
+    width: 100%;
+    height: auto;
   
-    max-height: 60rem;
+ 
     border: 1px solid;
 }
 .trifoldImages{
-max-width: 100%;
-height: auto;
+font-size: 40px;
 }
 
