@@ -16,11 +16,26 @@
     <section>
         <div class="jumbotron jumbotron-fluid pl-3 pt-0 pb-0">
             <div class="container-fluid  text-center" id="jumbo">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light mt-3">
-                    <a class="navbar-brand" href="#">SmooveDev24</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-3">
+                    <span><img src="imgs/logo_transparent.png" alt="SmoothDev24 logo" id="logo" class="img-fluid"></span><a class="navbar-brand" href="#">SmooveDev24</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#smoothNav" aria-controls="smoothNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <div class="collapse navbar-collapse" id="smoothNav">
+                      <ul class="navbar-nav nav justify-content-around ml-auto px-5">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#aboutMe">About</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                          <a class="nav-link" href="#triFold">Work</a>
+                        </li>
+                      </ul>
+                    </div>
+
                 </nav>
                 <div id="titleSection" class="container d-flex flex-column align-items-center">
                   <h1 class="display-3 pt-5">SmoothDev24's Portfolio Page</h1>
@@ -48,7 +63,7 @@
                       </button>
                     </div>
                     <div class="modal-body px-5">
-                        <form>
+                        <form method="POST" action="127.0.0.1/contact.txt">
                             <div class="form-group row">
                               <label class="col-3" for="connectName">Full Name</label>
                               <input type="text" class="form-control col-9" id="connectName" placeholder="Enter your name">
@@ -60,22 +75,22 @@
                             </div>
                             <div class="row text-center">
                               <div class="col form-check">
-                                <input type="checkbox" class="form-check-input px-1" id="checkMentors">
-                                <label class="form-check-label px-1" for="checkMentors">Mentors</label>
+                                <input type="checkbox" class="form-check-input px-1" id="checkMentors" value="Mentor">
+                                <label class="form-check-label px-1" for="checkMentors"  >Mentors</label>
                               </div>
                               <div class="col form-check">
-                                <input type="checkbox" class="form-check-input px-1" id="checkAccoutable">
+                                <input type="checkbox" class="form-check-input px-1" id="checkAccoutable" value="accountPartner">
                                 <label class="form-check-label px-1" for="checkAccoutable">Accountability Partner</label>
                               </div>
                               <div class="col form-check">
-                                <input type="checkbox" class="form-check-input px-1" id="checkCollab">
+                                <input type="checkbox" class="form-check-input px-1" id="checkCollab" value="collab">
                                 <label class="form-check-label px-1" for="checkCollab">Collaborate</label>
                               </div>
                             </div>
                           </form>
                     </div>
                     <div class="modal-footer">
-                      <button type="submit" class="btn btn-primary order-2">Submit</button>
+                      <button type="submit" value="submit" class="btn btn-primary order-2">Submit</button>
                       <button type="button" class="btn btn-secondary order-1" data-dismiss="modal">Cancel</button>
                     </div>
                   </div>
@@ -83,9 +98,9 @@
             </div>
         </div>
     </section>
-    <section class="text-center">
+    <section id="aboutMe" class="text-center">
         <div class="row">
-          <div class="row container-fluid">
+          <div class="row container-fluid pb-5">
               <img src="imgs/IMG_me.jpg" id="me" class="col-md-6" alt="Image of SmoothDev24 at his desk">
               <div class="col-md-6 d-flex justify-content-center align-items-center">
                 <p class="lead" id="blurb">Hello! My name is Randy Smith (aka SmoothDev24) and
@@ -152,8 +167,8 @@
         </div>
     </section>
     <section>
-      <footer>
-
+      <footer class="bg-dark">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repudiandae, magni cumque ipsum consequuntur nisi laboriosam? Rerum, porro! Officiis fuga praesentium explicabo fugit, ullam inventore deserunt quam enim voluptatem alias labore! Vel a culpa fugiat ipsum error magni sequi suscipit adipisci rerum deleniti iste nesciunt sit possimus, itaque aperiam magnam corporis qui incidunt voluptate explicabo quam. Consequuntur atque, magnam commodi vel provident eveniet reprehenderit. Blanditiis voluptatibus iure nobis repudiandae minima beatae dolorem impedit voluptatum natus ducimus eligendi, deserunt ipsum vel distinctio doloribus porro officia quisquam autem quis fugiat. Aut laborum soluta qui. Consectetur dignissimos commodi accusamus architecto libero, sint non unde quasi adipisci corrupti dolores cum odio fuga pariatur maxime aperiam! Nemo necessitatibus ratione porro, mollitia repellat ea impedit. Iste minus cumque ipsum ea, autem, facilis laboriosam aut molestiae eos aperiam unde nulla recusandae officia corrupti labore sed, sequi placeat magni impedit rerum. Facere expedita quas, esse a eos vitae laborum aliquam at accusamus, in perspiciatis quisquam architecto veritatis. Quos, molestiae non ipsa quo deleniti quidem voluptates iure nostrum natus repellat, molestias impedit, cumque fugit. Nesciunt sit laborum modi, assumenda quidem illum velit obcaecati cumque earum, fugiat praesentium. Asperiores sit corporis explicabo cumque fugit! Nisi, facere maiores! Iste repudiandae soluta dolore, deleniti neque quam numquam voluptas, est accusamus laudantium porro eligendi. Quasi voluptatem sint molestiae placeat architecto! Quaerat tempora rem amet animi, quia fuga eum tempore distinctio doloremque, saepe, at incidunt eaque mollitia accusamus nostrum illum voluptate voluptas dicta voluptatum fugiat officia quibusdam repellendus iure vero. Iste, excepturi, tempora perferendis corrupti officiis ad minima tempore nobis modi, nihil quasi debitis ducimus labore placeat suscipit incidunt. Delectus doloremque veritatis enim odio libero animi neque excepturi placeat illo sit molestias optio aliquam, perspiciatis quos suscipit dolores ducimus officiis. Nam natus, eaque dolor excepturi quos vitae in sequi impedit et pariatur dignissimos quam eligendi? Tempora excepturi nesciunt veritatis minima quis voluptatem est voluptates qui ea. Accusamus neque sequi sint itaque laborum aliquam, ipsa vel dolor quibusdam quae ut ullam quos quas soluta odit nulla totam quisquam odio esse non. Amet cum recusandae, sit ratione quis non, quasi iusto fugit ipsam animi in distinctio reiciendis possimus fugiat totam, quod nemo velit id placeat natus ipsum repellat deserunt consectetur vitae. Cum, alias non pariatur hic dolorum repellendus voluptate cupiditate ea ducimus quidem omnis necessitatibus voluptatum est provident ad molestias recusandae harum ipsa repudiandae, odit, facere blanditiis! Dicta id, odio illo animi maxime ex iure sed voluptas sint ut dolor hic aspernatur possimus fugiat rerum dolorum atque incidunt velit eveniet exercitationem. Nostrum perspiciatis ea architecto in ipsum expedita veritatis. Nulla praesentium temporibus, nesciunt debitis facilis excepturi quas autem optio eveniet maxime minima consequuntur explicabo pariatur aliquam. Veniam a vitae dolor minima? Blanditiis doloremque magnam id sunt amet voluptates nisi doloribus inventore ea labore natus dolorem eum excepturi voluptatibus eius, iste debitis impedit aperiam atque consequuntur ex quasi quia molestias veritatis? Quas temporibus molestias accusamus aperiam alias! Error dolores beatae nisi ut doloremque id sunt atque minus tempora autem. Vel officia quis esse tempora optio? Neque, quam porro? Fuga sunt vitae dolores voluptatibus necessitatibus, mollitia dolorum quisquam accusamus pariatur, nam quibusdam maxime quae praesentium quaerat? Repellat quidem possimus eaque qui? Nemo, ut deleniti eaque non deserunt, facilis sed doloremque cupiditate id quibusdam, quae libero iste placeat dolorum laboriosam? Culpa qui officia totam, illum deserunt eius hic numquam eum, id, beatae temporibus eveniet nobis odit minus? Et, eos minus. Voluptate maxime atque voluptatibus illo ad eum reiciendis sint fugit necessitatibus iste? Ipsum quas cupiditate minus consectetur odio labore perspiciatis, deleniti eaque veritatis illum nihil quisquam nostrum sint iusto nesciunt quidem error iste corrupti reprehenderit porro consequuntur dolorem! Maxime impedit autem, reprehenderit commodi ipsa incidunt in labore illo et! Ratione error nihil adipisci quaerat veritatis, autem dolorum culpa at repudiandae eveniet odio, omnis aut impedit sequi corporis cum laboriosam tempore nesciunt officiis. Iste maxime, harum commodi, ex officia nesciunt quaerat quibusdam sed alias illum quod deleniti expedita eius! Cumque, odit in, nostrum, suscipit voluptatem magnam voluptates perspiciatis ratione sapiente aut alias. Illum corporis assumenda at dignissimos atque, natus, provident libero omnis, alias aliquid consequuntur! Possimus deleniti illum odio impedit! Facere, mollitia. Natus repudiandae doloribus repellat temporibus perferendis eaque reiciendis sapiente tempora ipsa architecto aperiam harum, fugit ducimus nobis velit impedit non officiis veritatis, quidem quos, rerum necessitatibus. Distinctio, fugit eligendi pariatur expedita dicta praesentium maxime tenetur illo officiis porro nihil vero dolores sed consequatur rerum, dignissimos obcaecati iusto quasi iure iste! Perferendis repellat quos eos quia laborum saepe adipisci eveniet ratione, suscipit nesciunt dolores quaerat itaque odit magni expedita rerum, obcaecati eum reiciendis officiis asperiores doloremque iusto praesentium. Vero corrupti cupiditate unde ullam obcaecati, expedita nesciunt inventore adipisci ipsa saepe possimus itaque rerum, quis facilis totam! Eum, molestiae quidem quas alias a possimus sapiente porro ut vel expedita necessitatibus ipsa, amet harum non dolores itaque delectus quasi doloremque praesentium! Et, est reprehenderit veniam obcaecati rem possimus deserunt maiores necessitatibus fugiat, at numquam, ex earum expedita eligendi amet adipisci tempora. Nemo facere sapiente doloribus repudiandae vitae dolorum fugit hic aperiam architecto placeat commodi molestias impedit minima amet ipsum, laudantium voluptas voluptatem eaque! Accusantium quis eos vitae voluptates ipsam odio quia repellat ullam. Quod officia nemo deserunt ab recusandae aspernatur enim eius distinctio itaque ex. Pariatur, nostrum, praesentium beatae accusamus unde cum assumenda provident eaque facere id aspernatur quidem quas nemo perspiciatis, reiciendis distinctio. Repudiandae iste ullam iure! Porro, tempore! Vel tempora numquam aliquam, porro sit nihil quas consectetur aut vitae tempore incidunt obcaecati voluptas molestiae sint, veritatis repellendus praesentium qui doloribus velit iste fugit, architecto necessitatibus nisi. Pariatur facilis perspiciatis corporis amet est distinctio, vero laboriosam architecto? Voluptatem veritatis ea neque ipsam temporibus deserunt laudantium ut tenetur ullam sequi, velit molestiae consequuntur quibusdam. Excepturi debitis accusantium repudiandae consequuntur, temporibus et sapiente praesentium est, suscipit libero delectus rem. Iure aspernatur illum neque inventore tempora pariatur possimus esse ullam fugiat repellendus id, distinctio ipsum nobis dolorem reprehenderit cupiditate magni rem exercitationem sint quam fuga voluptate placeat maiores consequuntur. Aliquid libero nesciunt ducimus dolorum enim accusantium modi officia nostrum architecto, ipsa sapiente a?</p>
       </footer>
     </section>
     
