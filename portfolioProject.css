@@ -19,11 +19,21 @@
     width: 100%;
     height: auto;
 }
-#logo{
-    width: 2.5rem;
+#navLogo{
+    max-width: 5rem;
+    height: auto;
+    /* width: 2.5rem; */
     
+}
+#footLogo{
+    max-width: 25%;
+    height: auto;
+
 }
 .trifoldImages{
 font-size: 40px;
 }
-
+.socialLinks{
+    
+    font-size: 3rem;
+}
